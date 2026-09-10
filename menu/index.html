@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Interactive Seasonal Degustation Menu of Aurelia & Ash — Wood-fired binchotan courses, in-house koji ferments, and rare cellar pairings.">
+  <title>The Seasonal Menu & Cellar — Aurelia & Ash</title>
+  <!-- Aurelia & Ash Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/images/favicon.png">
+
+  <!-- Google Fonts Preconnect & Font Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared Global Stylesheet -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- External Motion Dependencies: GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Shared Interactive Engine -->
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <!-- Accessible Skip Navigation -->
+  <a href="#main-content" class="skip-to-content">Skip to Degustation Menu</a>
+
+  <!-- Shared Site Chrome: Header & Navigation -->
+  <header class="site-header" role="banner">
+    <div class="site-container">
+      <div class="header-inner">
+        <a href="../" class="site-brand" aria-label="Aurelia and Ash Home">
+          <div class="brand-monogram" aria-hidden="true">AA</div>
+          <div class="brand-text">
+            <span class="brand-name">Aurelia & Ash</span>
+            <span class="brand-subline">Kyoto · Copenhagen</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Bar -->
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <a href="../" class="nav-link">Home</a>
+          <a href="../history/" class="nav-link">Origins</a>
+          <a href="../method/" class="nav-link">Method</a>
+          <a href="../member/" class="nav-link">Craft</a>
+          <a href="../menu/" class="nav-link active" aria-current="page">Menu</a>
+          <a href="../contact/" class="nav-link">Concierge</a>
+        </nav>
+
+        <div class="header-cta-wrap">
+          <a href="../contact/" class="btn-luxury btn-header-reserve">
+            <span>Reserve Table</span>
+          </a>
+        </div>
+
+        <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-label="Toggle Navigation Menu">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div class="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <nav class="mobile-nav-links">
+      <a href="../" class="mobile-nav-item">
+        Home <span>01</span>
+      </a>
+      <a href="../history/" class="mobile-nav-item">
+        Origins <span>02</span>
+      </a>
+      <a href="../method/" class="mobile-nav-item">
+        Method <span>03</span>
+      </a>
+      <a href="../member/" class="mobile-nav-item">
+        Craft <span>04</span>
+      </a>
+      <a href="../menu/" class="mobile-nav-item active" aria-current="page">
+        Menu <span>05</span>
+      </a>
+      <a href="../contact/" class="mobile-nav-item">
+        Concierge <span>06</span>
+      </a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="../contact/" class="btn-luxury btn-luxury-primary" style="width: 100%;">
+        <span>Reserve Seating</span>
+      </a>
+      <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center;">
+        Single Seating Nightly · 12 Seats Only
+      </p>
+    </div>
+  </aside>
+
+  <!-- Main Landmark Container -->
+  <main id="main-content">
+    <!-- Hero Section: Full-Width Architectural Background & Editorial Overlay -->
+    <section class="hero hero-menu" aria-labelledby="menu-hero-heading">
+      <div class="hero-media">
+        <img 
+          src="../assets/images/hero-menu-01.jpg" 
+          alt="Exquisite seasonal degustation dish featuring bincho-charred seafood and preserved sub-arctic botanicals on hand-thrown dark textured ceramic plate" 
+          class="hero-media-image" 
+          data-asset-id="hero-menu-01" 
+          width="2560" 
+          height="1440" 
+          loading="lazy" 
+          decoding="async">
+        <div class="hero-scrim" aria-hidden="true"></div>
+      </div>
+      <div class="site-container hero-container">
+        <div class="hero-content-wrap">
+          <span class="eyebrow">Autumn–Winter Progression</span>
+          <h1 id="menu-hero-heading" class="display-hero">
+            The Seasonal Degustation &<br><em>Rare Cellar</em>
+          </h1>
+          <p class="hero-tagline-lead">
+            Sixteen distinct expressions of sub-arctic terroir and Japanese open-flame cookery. Available as our Grand Degustation or curated à la carte additions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Menu Engine Container -->
+    <section class="section-spacing" aria-labelledby="menu-section-heading">
+      <div class="site-container" data-module="menu-system">
+        <h2 id="menu-section-heading" class="visually-hidden" style="position: absolute; width: 1px; height: 1px; overflow: hidden;">Interactive Dish Menu</h2>
+        
+        <!-- Primary Category Tabs -->
+        <nav class="menu-tab-nav" role="tablist" aria-label="Menu Category Filter">
+          <button type="button" class="menu-tab-btn is-active" data-tab="all" role="tab" aria-selected="true">
+            Complete Archive
+          </button>
+          <button type="button" class="menu-tab-btn" data-tab="tasting" role="tab" aria-selected="false">
+            Tasting Menu
+          </button>
+          <button type="button" class="menu-tab-btn" data-tab="appetizers" role="tab" aria-selected="false">
+            Appetizers
+          </button>
+          <button type="button" class="menu-tab-btn" data-tab="mains" role="tab" aria-selected="false">
+            Main Courses
+          </button>
+          <button type="button" class="menu-tab-btn" data-tab="desserts" role="tab" aria-selected="false">
+            Desserts
+          </button>
+          <button type="button" class="menu-tab-btn" data-tab="mixology" role="tab" aria-selected="false">
+            Mixology & Cellar
+          </button>
+        </nav>
+
+        <!-- Secondary Tag Filters Bar -->
+        <div class="menu-filter-bar" role="group" aria-label="Dietary and Pairing Filters">
+          <span style="font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); margin-right: 0.5rem;">
+            Refine Attributes:
+          </span>
+          <button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">
+            All Dishes
+          </button>
+          <button type="button" class="filter-chip" data-filter="signature" aria-pressed="false">
+            [Signature]
+          </button>
+          <button type="button" class="filter-chip" data-filter="gf" aria-pressed="false">
+            [Gluten-Free]
+          </button>
+          <button type="button" class="filter-chip" data-filter="vegan" aria-pressed="false">
+            [Vegan / Plant]
+          </button>
+          <button type="button" class="filter-chip" data-filter="seafood" aria-pressed="false">
+            [Wild Seafood]
+          </button>
+          <button type="button" class="filter-chip" data-filter="pairing" aria-pressed="false">
+            [Sommelier Flight]
+          </button>
+        </div>
+
+        <!-- Dish Cards Grid -->
+        <div class="editorial-grid-3" id="dishGrid">
+          
+          <!-- Dish 1: Grand Tasting Degustation -->
+          <article class="dish-card-luxury" data-category="tasting" data-tags="signature pairing">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish1.jpg" 
+                alt="Table overview of the 16-course Grand Tasting Degustation with delicate courses arranged on handmade ceramic dishes" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">Grand Degustation Journey</h3>
+                  <span class="dish-kanji">十六幕の饗宴 · 16 Movements</span>
+                </div>
+                <span class="dish-price">¥38,000</span>
+              </div>
+              <p class="dish-ingredients">
+                The definitive expression of Aurelia & Ash. 16 movements journeying through raw cold-water mollusks, binchotan fire-seared game, in-house koji broths, and forest sweets.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Sommelier Recommendation:</strong> Grand Cru Champagne & Vintage Junmai Daiginjo Flight (+¥22,000)
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge signature">Signature</span>
+                <span class="tag-badge">16 Courses</span>
+                <span class="tag-badge">Pairing Available</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 2: Botanical & Foraged Tasting -->
+          <article class="dish-card-luxury" data-category="tasting" data-tags="vegan gf pairing">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish2.jpg" 
+                alt="Plant-forward fine dining degustation dish with roasted celeriac, foraged lichen, and wild berry reduction" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">Botanical & Foraged Degustation</h3>
+                  <span class="dish-kanji">野生植物の真髄 · Plant-Led</span>
+                </div>
+                <span class="dish-price">¥32,000</span>
+              </div>
+              <p class="dish-ingredients">
+                A 14-movement plant-centric meditation utilizing highland lichens, lacto-fermented root vegetables, ember-roasted fungi, and birch sap reductions.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Botanical Flight:</strong> Distilled forest cordials, pine waters, and aged fruit vinegars (+¥14,000)
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge">Vegan</span>
+                <span class="tag-badge">Gluten-Free</span>
+                <span class="tag-badge">Organic</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 3: Bincho-Cured Hamachi -->
+          <article class="dish-card-luxury" data-category="appetizers" data-tags="signature gf seafood pairing">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish3.jpg" 
+                alt="Michelin star cured hamachi with smoked dashi gel, caviar, edible gold leaf, micro herbs on dark ceramic" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">Bincho-Cured Hamachi</h3>
+                  <span class="dish-kanji">鰤の塩藁焼き · Cold Hearth</span>
+                </div>
+                <span class="dish-price">¥6,800</span>
+              </div>
+              <p class="dish-ingredients">
+                Wild yellowtail cured in sea kelp, cold-smoked with cherrywood, served with transparent dashi gelée, golden trout roe, and yuzu-kosho emulsion.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Pairing:</strong> 2021 Domaine Leflaive Puligny-Montrachet
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge signature">Signature</span>
+                <span class="tag-badge">GF</span>
+                <span class="tag-badge">Seafood</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 4: Charred Maitake & Pine Needle Broth -->
+          <article class="dish-card-luxury" data-category="appetizers" data-tags="vegan gf pairing">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish4.jpg" 
+                alt="Charred wild maitake mushroom in handcrafted ceramic earthen bowl with aromatic amber broth" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">Charred Maitake & Pine Broth</h3>
+                  <span class="dish-kanji">舞茸の土瓶蒸し · Woodland Broth</span>
+                </div>
+                <span class="dish-price">¥5,200</span>
+              </div>
+              <p class="dish-ingredients">
+                Wild foraged maitake seared over white oak coals, simmered in an 18-month barley koji broth, and finished with fragrant cold-pressed Scots pine oil.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Pairing:</strong> Katsuyama Junmai Daiginjo 'Den'
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge">Vegan</span>
+                <span class="tag-badge">GF</span>
+                <span class="tag-badge">Organic</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 5: Langoustine & Fermented Gooseberry -->
+          <article class="dish-card-luxury" data-category="appetizers" data-tags="gf seafood">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish5.jpg" 
+                alt="Wood-roasted Faroese langoustine tail glazed with salted gooseberry butter and roasted kelp foam" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">Langoustine & Fermented Gooseberry</h3>
+                  <span class="dish-kanji">赤座海老と酸塊 · Oceanic Flame</span>
+                </div>
+                <span class="dish-price">¥7,500</span>
+              </div>
+              <p class="dish-ingredients">
+                Faroese live langoustine split and blistered over 900°C embers, glazed with 1-year lacto-fermented gooseberry glaze and toasted seaweed crisp.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Pairing:</strong> 2020 Meursault Clos des Bouchères
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge">GF</span>
+                <span class="tag-badge">Seafood</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 6: Aged Miyazaki Wagyu A5 -->
+          <article class="dish-card-luxury" data-category="mains" data-tags="signature gf pairing">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish6.jpg" 
+                alt="Aged Wagyu A5 strip tenderloin with truffle reduction, charred maitake mushroom, gold leaf accent on dark slate" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">Aged Miyazaki Wagyu A5</h3>
+                  <span class="dish-kanji">宮崎牛の備長炭焼き · Prime Flame</span>
+                </div>
+                <span class="dish-price">¥14,500</span>
+              </div>
+              <p class="dish-ingredients">
+                45-day koji dry-aged Miyazaki beef roasted slowly over Binchotan coals, accompanied by smoked bone marrow jus, fermented ramps, and black winter truffle.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Pairing:</strong> 2018 Château Pontet-Canet Pauillac
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge signature">Signature</span>
+                <span class="tag-badge">GF</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 7: Glazed Halibut with Fermented Koji Jus -->
+          <article class="dish-card-luxury" data-category="mains" data-tags="gf seafood">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish7.jpg" 
+                alt="Pan-roasted wild halibut fillet with glossy fermented koji reduction and sea greens" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">Glazed Halibut & Koji Jus</h3>
+                  <span class="dish-kanji">鮃の塩麹焼き · Coastal Catch</span>
+                </div>
+                <span class="dish-price">¥9,800</span>
+              </div>
+              <p class="dish-ingredients">
+                Line-caught Atlantic halibut steamed gently over cherrywood boughs, glazed with umami-rich shio-koji butter and finished with crispy sea lichen.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Pairing:</strong> 2022 Grand Cru Chablis Les Clos
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge">GF</span>
+                <span class="tag-badge">Seafood</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 8: Charred Celeriac & Roasted Yeast Puree -->
+          <article class="dish-card-luxury" data-category="mains" data-tags="vegan gf">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish8.jpg" 
+                alt="Whole celeriac baked in embers sliced with caramelized yeast cream and black winter truffle carpaccio" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">Charred Celeriac & Roasted Yeast</h3>
+                  <span class="dish-kanji">根セロリの炭火焼き · Earth Essence</span>
+                </div>
+                <span class="dish-price">¥7,200</span>
+              </div>
+              <p class="dish-ingredients">
+                Organic celeriac buried in live embers for eight hours, plated over silky caramelized yeast emulsion, pickled mustard seeds, and truffle carpaccio.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Pairing:</strong> Biodynamic Jura Vin Jaune 2015
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge">Vegan</span>
+                <span class="tag-badge">GF</span>
+                <span class="tag-badge">Organic</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 9: Barley Koji & Smoked Birch Tart -->
+          <article class="dish-card-luxury" data-category="desserts" data-tags="signature">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish9.jpg" 
+                alt="Dessert tart made with roasted barley koji caramel, Jerusalem artichoke ice cream, and smoked birch syrup" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">Barley Koji & Smoked Birch Tart</h3>
+                  <span class="dish-kanji">麦麹と白樺のタルト · Sweet Alchemy</span>
+                </div>
+                <span class="dish-price">¥4,500</span>
+              </div>
+              <p class="dish-ingredients">
+                Crisp tart filled with rich koji caramel, roasted kelp crumble, and smoked birch sap ice cream with ten-year aged reduced balsamic.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Pairing:</strong> 2019 Royal Tokaji 6 Puttonyos
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge signature">Signature</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 10: Frozen Douglas Fir & Sea Buckthorn -->
+          <article class="dish-card-luxury" data-category="desserts" data-tags="gf vegan">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish10.jpg" 
+                alt="Vibrant orange sea buckthorn sorbet garnished with crystalized pine needles on dark stone plate" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">Frozen Douglas Fir & Buckthorn</h3>
+                  <span class="dish-kanji">蝦夷松とサジーのソルベ · Forest Chill</span>
+                </div>
+                <span class="dish-price">¥4,200</span>
+              </div>
+              <p class="dish-ingredients">
+                Nitrogen-frozen Douglas fir pine needle granite, cold-pressed wild sea buckthorn coulis, aerated sheep's milk yogurt, and candied moss.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Pairing:</strong> Masumi Sparkling Sake Origami
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge">GF</span>
+                <span class="tag-badge">Vegan</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 11: Dark Cacao & Fermented Miso Ganache -->
+          <article class="dish-card-luxury" data-category="desserts" data-tags="gf">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish11.jpg" 
+                alt="Dark chocolate ganache square dusted with cocoa, gold leaf, and dollop of red miso caramel" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">Cacao & Fermented Miso Ganache</h3>
+                  <span class="dish-kanji">味噌と生チョコ · Deep Umami</span>
+                </div>
+                <span class="dish-price">¥4,800</span>
+              </div>
+              <p class="dish-ingredients">
+                85% single-origin Venezuelan chocolate whipped into silken ganache, drizzled with 3-year red miso caramel, smoked Maldon salt, and crispy barley.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Pairing:</strong> 20-Year Boal Madeira
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge">GF</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 12: Peat & Plum Highball -->
+          <article class="dish-card-luxury" data-category="mixology" data-tags="signature pairing">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish12.jpg" 
+                alt="Smoked old fashioned cocktail in heavy cut crystal glass with hand carved ice sphere and aromatic smoke" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">The Peat & Plum Highball</h3>
+                  <span class="dish-kanji">泥炭と梅 · Smoky Distillate</span>
+                </div>
+                <span class="dish-price">¥3,200</span>
+              </div>
+              <p class="dish-ingredients">
+                Japanese single malt, lacto-fermented umeboshi plum reduction, wild cherry bark bitters, charged spring water, and hand-carved crystal ice column.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Profile:</strong> Smoked stone fruit with rich peat finish
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge signature">Signature</span>
+                <span class="tag-badge">Mixology</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 13: Nordic Forest Essence -->
+          <article class="dish-card-luxury" data-category="mixology" data-tags="vegan gf">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish13.jpg" 
+                alt="Sparkling non-alcoholic botanical cocktail in flute glass with fresh pine garnish and golden tint" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">Nordic Forest Essence (Zero-Proof)</h3>
+                  <span class="dish-kanji">白樺と野草 · Botanical Infusion</span>
+                </div>
+                <span class="dish-price">¥2,400</span>
+              </div>
+              <p class="dish-ingredients">
+                Cold-distilled birch water, wild pine needles, fermented green apple verjus, and sparkling mineral water. Crisp, resinous, and deeply refreshing.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Profile:</strong> Zero-alcohol woodland botanical pairing
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge">Non-Alcoholic</span>
+                <span class="tag-badge">Vegan</span>
+                <span class="tag-badge">GF</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 14: Ceremonial Smoked Sencha -->
+          <article class="dish-card-luxury" data-category="mixology" data-tags="vegan gf">
+            <div class="dish-card-img-wrap">
+              <img 
+                src="../assets/images/dish14.jpg" 
+                alt="Traditional Japanese tea ceremony bowl with glowing green sencha cold-smoked over cherrywood embers" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <div class="dish-card-content">
+              <div class="dish-card-header">
+                <div class="dish-bilingual-name">
+                  <h3 class="dish-english">Ceremonial Smoked Sencha</h3>
+                  <span class="dish-kanji">燻製宇治煎茶 · Tea Reserve</span>
+                </div>
+                <span class="dish-price">¥1,800</span>
+              </div>
+              <p class="dish-ingredients">
+                Single-estate Uji first-flush green tea, lightly smoked over Danish cherrywood shavings before traditional low-temperature steeping.
+              </p>
+              <div class="dish-pairing-suggestion">
+                <strong>Profile:</strong> Grassy alpine sweetness with delicate smoke veil
+              </div>
+              <div class="dish-tags-wrap">
+                <span class="tag-badge">Organic</span>
+                <span class="tag-badge">Vegan</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Wine & Cellar Reserve Section -->
+    <section class="section-spacing" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle);" aria-labelledby="cellar-heading">
+      <div class="site-container">
+        <div class="editorial-split asymmetric-left">
+          <div>
+            <span class="eyebrow">The Sommelier Vaults</span>
+            <h2 id="cellar-heading" style="margin-bottom: 1.5rem;">
+              Low-Intervention Living Wines & Ancient Sakes
+            </h2>
+            <div class="gold-divider"></div>
+            <p class="lead-text" style="margin-bottom: 1.5rem;">
+              Our cellar houses over 1,400 reference bottles curated exclusively from biodynamic European family estates and centuries-old Japanese sake breweries practicing ancestral kimoto and bodaimoto fermentation.
+            </p>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+              We offer three distinct pairing itineraries alongside every dinner service: the Grand Cru Terroir Flight, the Artisanal Heritage Sake Flight, and our in-house Zero-Proof Botanical Ferment Flight.
+            </p>
+            <a href="../contact/" class="btn-luxury btn-luxury-primary">
+              <span>Reserve Cellar Degustation</span>
+            </a>
+          </div>
+
+          <div class="hero-visual-frame" style="aspect-ratio: 16 / 10;">
+            <img 
+              src="../assets/images/dish15.jpg" 
+              alt="Atmospheric underground wine and sake cellar with timber racks holding rare vintage bottles bathed in warm golden light" 
+              width="1600" 
+              height="1000" 
+              loading="lazy">
+            <div class="hero-image-caption">The Subterranean Vaults · 1,400 References</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Floating WhatsApp Reservation CTA -->
+  <aside class="whatsapp-floating-widget" aria-label="Direct WhatsApp Concierge">
+    <a href="https://wa.me/601163265610" class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Reserve via WhatsApp Concierge (Opens WhatsApp)">
+      <span class="whatsapp-icon-circle" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.148-.528-1.574-.649-2.583-2.253-2.661-2.357-.078-.105-.637-.847-.637-1.615 0-.767.401-1.144.543-1.301.143-.157.312-.196.416-.196.104 0 .208.001.299.006.095.005.223-.036.349.266.13.312.443 1.077.482 1.155.039.078.065.17.013.273-.052.104-.078.169-.156.26-.078.091-.163.204-.233.274-.078.078-.16.163-.069.319.091.156.403.665.865 1.076.594.529 1.096.693 1.252.771.156.078.247.065.338-.039.091-.104.39-.455.494-.611.104-.156.208-.13.349-.078.143.052.909.429 1.065.507.156.078.26.117.299.182.039.065.039.377-.105.782z"/>
+        </svg>
+      </span>
+      <span class="whatsapp-float-label">Concierge</span>
+    </a>
+  </aside>
+
+  <!-- Shared Site Chrome: Luxury Dark Contrast Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <span class="footer-brand-title">Aurelia & Ash</span>
+          <p class="footer-brand-desc">
+            An elemental encounter between wild Scandinavian nature and ancestral Kyoto wood-fire mastery.
+          </p>
+          <div class="footer-accolade-badge">
+            <span aria-hidden="true">✧</span> 3 Michelin Stars Concept
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="../" class="footer-link">Sanctuary Home</a></li>
+            <li><a href="../history/" class="footer-link">Origins & Terroir</a></li>
+            <li><a href="../method/" class="footer-link">The Culinary Method</a></li>
+            <li><a href="../member/" class="footer-link">The Brigade & Masters</a></li>
+            <li><a href="../menu/" class="footer-link">Degustation & Cellar</a></li>
+            <li><a href="../contact/" class="footer-link">Concierge & Booking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Sanctuary Details</h3>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Location</span>
+            <span class="footer-contact-val">Higashiyama Ward, Kyoto / Atelier Bornholm</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Hours</span>
+            <span class="footer-contact-val">Wednesday – Sunday · 18:00 & 20:30 Seatings</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Direct Concierge</span>
+            <span class="footer-contact-val">+60 11-6326 5610</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">The Concierge</h3>
+          <p class="footer-brand-desc" style="margin-bottom: 1.25rem;">
+            Instant assistance for private dining room takeovers, corporate buyouts, or special dietary protocols.
+          </p>
+          <a href="../contact/" class="btn-luxury btn-luxury-gold" style="padding: 0.8rem 1.6rem; font-size: 0.72rem;">
+            <span>Inquire via WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>© 2026 Aurelia & Ash Gastronomy Group. All rights reserved.</p>
+        <p class="footer-concept-disclaimer">
+          Brand Honesty Notice: All accolades, awards, and star ratings presented on this website reflect culinary concept blueprints and aspirational benchmarking, not verified commercial certifications.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

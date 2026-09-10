@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Culinary Method of Aurelia & Ash — Binchotan wood fire, micro-climate koji fermentation, and circular zero-waste gastronomy.">
+  <title>The Method & Philosophy — Aurelia & Ash</title>
+  <!-- Aurelia & Ash Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/images/favicon.png">
+
+  <!-- Google Fonts Preconnect & Font Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared Global Stylesheet -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- External Motion Dependencies: GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Shared Interactive Engine -->
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <!-- Accessible Skip Navigation -->
+  <a href="#main-content" class="skip-to-content">Skip to Culinary Doctrine</a>
+
+  <!-- Shared Site Chrome: Header & Navigation -->
+  <header class="site-header" role="banner">
+    <div class="site-container">
+      <div class="header-inner">
+        <a href="../" class="site-brand" aria-label="Aurelia and Ash Home">
+          <div class="brand-monogram" aria-hidden="true">AA</div>
+          <div class="brand-text">
+            <span class="brand-name">Aurelia & Ash</span>
+            <span class="brand-subline">Kyoto · Copenhagen</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Bar -->
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <a href="../" class="nav-link">Home</a>
+          <a href="../history/" class="nav-link">Origins</a>
+          <a href="../method/" class="nav-link active" aria-current="page">Method</a>
+          <a href="../member/" class="nav-link">Craft</a>
+          <a href="../menu/" class="nav-link">Menu</a>
+          <a href="../contact/" class="nav-link">Concierge</a>
+        </nav>
+
+        <div class="header-cta-wrap">
+          <a href="../contact/" class="btn-luxury btn-header-reserve">
+            <span>Reserve Table</span>
+          </a>
+        </div>
+
+        <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-label="Toggle Navigation Menu">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div class="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <nav class="mobile-nav-links">
+      <a href="../" class="mobile-nav-item">
+        Home <span>01</span>
+      </a>
+      <a href="../history/" class="mobile-nav-item">
+        Origins <span>02</span>
+      </a>
+      <a href="../method/" class="mobile-nav-item active" aria-current="page">
+        Method <span>03</span>
+      </a>
+      <a href="../member/" class="mobile-nav-item">
+        Craft <span>04</span>
+      </a>
+      <a href="../menu/" class="mobile-nav-item">
+        Menu <span>05</span>
+      </a>
+      <a href="../contact/" class="mobile-nav-item">
+        Concierge <span>06</span>
+      </a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="../contact/" class="btn-luxury btn-luxury-primary" style="width: 100%;">
+        <span>Reserve Seating</span>
+      </a>
+      <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center;">
+        Single Seating Nightly · 12 Seats Only
+      </p>
+    </div>
+  </aside>
+
+  <!-- Main Landmark Container -->
+  <main id="main-content">
+    <!-- Hero Section: Full-Width Architectural Background & Editorial Overlay -->
+    <section class="hero hero-method" aria-labelledby="method-hero-heading">
+      <div class="hero-media">
+        <img 
+          src="../assets/images/hero-method-01.jpg" 
+          alt="Master chef tending glowing Kishu binchotan charcoal coals in a custom open stone hearth surrounded by ceramic fermentation vessels" 
+          class="hero-media-image" 
+          data-asset-id="hero-method-01" 
+          width="2560" 
+          height="1440" 
+          loading="lazy" 
+          decoding="async">
+        <div class="hero-scrim" aria-hidden="true"></div>
+      </div>
+      <div class="site-container hero-container">
+        <div class="hero-content-wrap">
+          <span class="eyebrow">The Kitchen Doctrine</span>
+          <h1 id="method-hero-heading" class="display-hero">
+            Ancient Elements.<br><em>Fermentative Alchemy.</em>
+          </h1>
+          <p class="hero-tagline-lead">
+            We reject gas ranges, combi-steamers, and synthetic additives. Our kitchen is an elemental laboratory governed by raw physical thermal physics, microbial biochemistry, and total circularity.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The 3 Pillars of Kitchen Doctrine -->
+    <section class="section-spacing" aria-labelledby="doctrine-heading">
+      <div class="site-container">
+        <div style="max-width: 650px; margin-bottom: var(--space-xl);">
+          <span class="eyebrow">Tripartite Culinary Doctrine</span>
+          <h2 id="doctrine-heading">The Three Pillars of Our Hearth</h2>
+          <p class="lead-text" style="margin-top: 0.5rem;">
+            Every single mouthful placed before our guests is informed by this non-negotiable discipline.
+          </p>
+        </div>
+
+        <div class="editorial-grid-3">
+          <!-- Doctrine Pillar 1: Elemental Fire -->
+          <article class="doctrine-card">
+            <span class="doctrine-num">01</span>
+            <span class="eyebrow">Thermal Physics</span>
+            <h3 class="doctrine-title">Elemental Fire</h3>
+            <div class="doctrine-media">
+              <img 
+                src="../assets/images/doctrine-1.jpg" 
+                alt="Glowing white hot Kishu Binchotan charcoal embers emitting pure radiant infrared heat" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <p class="lead-text" style="font-size: 1rem; margin-bottom: 1rem;">
+              We fuel our open hearth solely with Kishu Binchotan—aged Japanese holm oak fired in earthen kilns for three weeks until it achieves near-metallic carbon density.
+            </p>
+            <p style="font-size: var(--fs-body-sm); color: var(--text-secondary);">
+              At temperatures exceeding 900°C, it emits zero acrid soot, delivering pure, radiant far-infrared wavelengths that sear proteins instantaneously while trapping cellular moisture.
+            </p>
+          </article>
+
+          <!-- Doctrine Pillar 2: Fermentation Lab -->
+          <article class="doctrine-card">
+            <span class="doctrine-num">02</span>
+            <span class="eyebrow">Subterranean Microbiology</span>
+            <h3 class="doctrine-title">The Fermentation Lab</h3>
+            <div class="doctrine-media">
+              <img 
+                src="../assets/images/doctrine-2.jpg" 
+                alt="In-house fermentation chamber with trays of barley blooming with velvet white koji spores" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <p class="lead-text" style="font-size: 1rem; margin-bottom: 1rem;">
+              Two floors below our dining counter lies our hermetically calibrated microbial vaults, where temperature and relative humidity replicate old-growth forest undergrowth.
+            </p>
+            <p style="font-size: var(--fs-body-sm); color: var(--text-secondary);">
+              Here, strains of <em>Aspergillus oryzae</em> propagate on organic Danish pearl barley, creating the enzymatic engine for our 24-month game-meat garums, wild elderflower vinegars, and aged amino pastes.
+            </p>
+          </article>
+
+          <!-- Doctrine Pillar 3: Zero-Waste Gastronomy -->
+          <article class="doctrine-card">
+            <span class="doctrine-num">03</span>
+            <span class="eyebrow">Circular Alchemy</span>
+            <h3 class="doctrine-title">Zero-Waste Gastronomy</h3>
+            <div class="doctrine-media">
+              <img 
+                src="../assets/images/doctrine-3.jpg" 
+                alt="Glass vials of clarified botanical oils, roasted bone glazes, and fine black vegetable ash seasonings" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+            <p class="lead-text" style="font-size: 1rem; margin-bottom: 1rem;">
+              Nothing biological leaves our kitchen as waste. Every peel, shell, bone, and spent ferment grain undergoes thermal or microbiological conversion.
+            </p>
+            <p style="font-size: var(--fs-body-sm); color: var(--text-secondary);">
+              Carrot peelings become lacto-fermented glazes; langoustine carapaces yield aromatic cold-pressed finishing oils; spent binchotan ash is purified to season salt crusts.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Behind the Pass: Visual Storytelling of Service Ballet -->
+    <section class="section-spacing" style="background-color: var(--bg-secondary);" aria-labelledby="pass-heading">
+      <div class="site-container">
+        <div style="max-width: 680px; margin-bottom: var(--space-xl);">
+          <span class="eyebrow">Service Choreography</span>
+          <h2 id="pass-heading">Behind the Pass: The Nightly Ballet</h2>
+          <p class="lead-text" style="margin-top: 0.5rem;">
+            From the afternoon ember ignition to the midnight hearth quietude, every movement is choreographed with silent clockwork precision.
+          </p>
+        </div>
+
+        <div class="pass-chronology-container">
+          <!-- Moment 1 -->
+          <article class="pass-chronology-item">
+            <span class="pass-time-stamp">17:30</span>
+            <div class="pass-detail-col">
+              <span class="eyebrow">Act I · Ignition</span>
+              <h3>The Kindling of the Coals</h3>
+              <p style="font-size: var(--fs-body-sm); color: var(--text-secondary); margin-top: 0.5rem;">
+                The brigade gathers around the hearth. White oak logs are ignited with cedar shavings. The embers are built into three discrete thermal zones: searing heat (900°C), roasting zone (450°C), and the slow-hanging smoking tier (75°C).
+              </p>
+            </div>
+            <div class="pass-media-frame">
+              <img 
+                src="../assets/images/behind-pass-1.jpg" 
+                alt="Chef using cast-iron tongs to carefully arrange glowing white charcoal logs in the open brick hearth" 
+                width="1920" 
+                height="1080" 
+                loading="lazy">
+            </div>
+          </article>
+
+          <!-- Moment 2 -->
+          <article class="pass-chronology-item">
+            <span class="pass-time-stamp">18:15</span>
+            <div class="pass-detail-col">
+              <span class="eyebrow">Act II · The Vaults</span>
+              <h3>Decanting the Garum Archives</h3>
+              <p style="font-size: var(--fs-body-sm); color: var(--text-secondary); margin-top: 0.5rem;">
+                Subterranean clay jars are uncorked. The Head Fermenter draws drops of aged wild venison garum through glass pipettes, verifying titratable acidity and glutamate concentration before service.
+              </p>
+            </div>
+            <div class="pass-media-frame" style="aspect-ratio: 4 / 3;">
+              <img 
+                src="../assets/images/behind-pass-2.jpg" 
+                alt="Close up of laboratory glass pipette drawing rich amber fermented liquid from ceramic vessel" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+          </article>
+
+          <!-- Moment 3 -->
+          <article class="pass-chronology-item">
+            <span class="pass-time-stamp">19:00</span>
+            <div class="pass-detail-col">
+              <span class="eyebrow">Act III · The Pass</span>
+              <h3>Synchronized Tweezer Plating</h3>
+              <p style="font-size: var(--fs-body-sm); color: var(--text-secondary); margin-top: 0.5rem;">
+                The first guest is seated. Words disappear, replaced by eye contact and quiet hand signals. Six chefs plate twelve courses in exact unison, each placement guided by balance, texture, and thermal velocity.
+              </p>
+            </div>
+            <div class="pass-media-frame" style="aspect-ratio: 4 / 3;">
+              <img 
+                src="../assets/images/behind-pass-3.jpg" 
+                alt="Head chef using fine stainless steel culinary tweezers to place micro herbs on delicate seafood course" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+            </div>
+          </article>
+
+          <!-- Moment 4 -->
+          <article class="pass-chronology-item">
+            <span class="pass-time-stamp">20:30</span>
+            <div class="pass-detail-col">
+              <span class="eyebrow">Act IV · The Climax</span>
+              <h3>Tableside Embers & Dashi Ritual</h3>
+              <p style="font-size: var(--fs-body-sm); color: var(--text-secondary); margin-top: 0.5rem;">
+                A glowing binchotan briquette is immersed directly into an infusion of 10-year kombu broth at the counter, releasing aromatic birch vapor before the final savory movement.
+              </p>
+            </div>
+            <div class="pass-media-frame">
+              <img 
+                src="../assets/images/behind-pass-4.jpg" 
+                alt="Dramatic view of glowing coal dropped into hot savory dashi at the guest counter with aromatic steam billowing" 
+                width="1920" 
+                height="1080" 
+                loading="lazy">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Bridge to Team -->
+    <section class="section-spacing">
+      <div class="site-container-narrow" style="text-align: center;">
+        <span class="eyebrow centered">The Custodians</span>
+        <h2>Meet the Hands Behind the Flame</h2>
+        <div class="gold-divider center"></div>
+        <p class="lead-text" style="margin-bottom: 2rem;">
+          From our Michelin-pedigreed Head Chef to our Sommelier and Master Fermenter, learn what drives each craftsperson at Aurelia & Ash.
+        </p>
+        <a href="../member/" class="btn-luxury btn-luxury-primary">
+          <span>Meet the Team & Masters</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Floating WhatsApp Reservation CTA -->
+  <aside class="whatsapp-floating-widget" aria-label="Direct WhatsApp Concierge">
+    <a href="https://wa.me/601163265610" class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Reserve via WhatsApp Concierge (Opens WhatsApp)">
+      <span class="whatsapp-icon-circle" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.148-.528-1.574-.649-2.583-2.253-2.661-2.357-.078-.105-.637-.847-.637-1.615 0-.767.401-1.144.543-1.301.143-.157.312-.196.416-.196.104 0 .208.001.299.006.095.005.223-.036.349.266.13.312.443 1.077.482 1.155.039.078.065.17.013.273-.052.104-.078.169-.156.26-.078.091-.163.204-.233.274-.078.078-.16.163-.069.319.091.156.403.665.865 1.076.594.529 1.096.693 1.252.771.156.078.247.065.338-.039.091-.104.39-.455.494-.611.104-.156.208-.13.349-.078.143.052.909.429 1.065.507.156.078.26.117.299.182.039.065.039.377-.105.782z"/>
+        </svg>
+      </span>
+      <span class="whatsapp-float-label">Concierge</span>
+    </a>
+  </aside>
+
+  <!-- Shared Site Chrome: Luxury Dark Contrast Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <span class="footer-brand-title">Aurelia & Ash</span>
+          <p class="footer-brand-desc">
+            An elemental encounter between wild Scandinavian nature and ancestral Kyoto wood-fire mastery.
+          </p>
+          <div class="footer-accolade-badge">
+            <span aria-hidden="true">✧</span> 3 Michelin Stars Concept
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="../" class="footer-link">Sanctuary Home</a></li>
+            <li><a href="../history/" class="footer-link">Origins & Terroir</a></li>
+            <li><a href="../method/" class="footer-link">The Culinary Method</a></li>
+            <li><a href="../member/" class="footer-link">The Brigade & Masters</a></li>
+            <li><a href="../menu/" class="footer-link">Degustation & Cellar</a></li>
+            <li><a href="../contact/" class="footer-link">Concierge & Booking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Sanctuary Details</h3>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Location</span>
+            <span class="footer-contact-val">Higashiyama Ward, Kyoto / Atelier Bornholm</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Hours</span>
+            <span class="footer-contact-val">Wednesday – Sunday · 18:00 & 20:30 Seatings</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Direct Concierge</span>
+            <span class="footer-contact-val">+60 11-6326 5610</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">The Concierge</h3>
+          <p class="footer-brand-desc" style="margin-bottom: 1.25rem;">
+            Instant assistance for private dining room takeovers, corporate buyouts, or special dietary protocols.
+          </p>
+          <a href="../contact/" class="btn-luxury btn-luxury-gold" style="padding: 0.8rem 1.6rem; font-size: 0.72rem;">
+            <span>Inquire via WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>© 2026 Aurelia & Ash Gastronomy Group. All rights reserved.</p>
+        <p class="footer-concept-disclaimer">
+          Brand Honesty Notice: All accolades, awards, and star ratings presented on this website reflect culinary concept blueprints and aspirational benchmarking, not verified commercial certifications.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

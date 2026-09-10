@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the Culinary Masters & Brigade of Aurelia & Ash — Visionaries, chefs, fermenters, and sommeliers orchestrating world-class Michelin-caliber dining.">
+  <title>The Brigade & Masters — Aurelia & Ash</title>
+  <!-- Aurelia & Ash Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/images/favicon.png">
+  <!-- Google Fonts Preconnect & Font Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared Global Stylesheet -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- External Motion Dependencies: GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Shared Interactive Engine -->
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <!-- Accessible Skip Navigation -->
+  <a href="#main-content" class="skip-to-content">Skip to Team Profiles</a>
+
+  <!-- Shared Site Chrome: Header & Navigation -->
+  <header class="site-header" role="banner">
+    <div class="site-container">
+      <div class="header-inner">
+        <a href="../" class="site-brand" aria-label="Aurelia and Ash Home">
+          <div class="brand-monogram" aria-hidden="true">AA</div>
+          <div class="brand-text">
+            <span class="brand-name">Aurelia & Ash</span>
+            <span class="brand-subline">Kyoto · Copenhagen</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Bar -->
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <a href="../" class="nav-link">Home</a>
+          <a href="../history/" class="nav-link">Origins</a>
+          <a href="../method/" class="nav-link">Method</a>
+          <a href="../member/" class="nav-link active" aria-current="page">Craft</a>
+          <a href="../menu/" class="nav-link">Menu</a>
+          <a href="../contact/" class="nav-link">Concierge</a>
+        </nav>
+
+        <div class="header-cta-wrap">
+          <a href="../contact/" class="btn-luxury btn-header-reserve">
+            <span>Reserve Table</span>
+          </a>
+        </div>
+
+        <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-label="Toggle Navigation Menu">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div class="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <nav class="mobile-nav-links">
+      <a href="../" class="mobile-nav-item">
+        Home <span>01</span>
+      </a>
+      <a href="../history/" class="mobile-nav-item">
+        Origins <span>02</span>
+      </a>
+      <a href="../method/" class="mobile-nav-item">
+        Method <span>03</span>
+      </a>
+      <a href="../member/" class="mobile-nav-item active" aria-current="page">
+        Craft <span>04</span>
+      </a>
+      <a href="../menu/" class="mobile-nav-item">
+        Menu <span>05</span>
+      </a>
+      <a href="../contact/" class="mobile-nav-item">
+        Concierge <span>06</span>
+      </a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="../contact/" class="btn-luxury btn-luxury-primary" style="width: 100%;">
+        <span>Reserve Seating</span>
+      </a>
+      <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center;">
+        Single Seating Nightly · 12 Seats Only
+      </p>
+    </div>
+  </aside>
+
+  <!-- Main Landmark Container -->
+  <main id="main-content">
+    <!-- Hero Section: Full-Width Architectural Background & Editorial Overlay -->
+    <section class="hero hero-member" aria-labelledby="member-hero-heading">
+      <div class="hero-media">
+        <img 
+          src="../assets/images/hero-member-01.jpg" 
+          alt="Culinary brigade and artisanal masters gathered in muted dark linen uniforms along the monolithic oak pass in quiet preparation before evening service" 
+          class="hero-media-image" 
+          data-asset-id="hero-member-01" 
+          width="2560" 
+          height="1440" 
+          loading="lazy" 
+          decoding="async">
+        <div class="hero-scrim" aria-hidden="true"></div>
+      </div>
+      <div class="site-container hero-container">
+        <div class="hero-content-wrap">
+          <span class="eyebrow">The Custodians of Craft</span>
+          <h1 id="member-hero-heading" class="display-hero">
+            The Brigade &<br><em>Artisanal Masters</em>
+          </h1>
+          <p class="hero-tagline-lead">
+            Meet the ten individuals whose lifetimes in Copenhagen ateliers, Kyoto ryokans, and biodynamic vineyards coalesce around our single evening seating.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Group 1: Executive Leadership -->
+    <section class="section-spacing" aria-labelledby="leadership-heading">
+      <div class="site-container">
+        <div style="max-width: 600px; margin-bottom: var(--space-xl);">
+          <span class="eyebrow">Vision & Stewardship</span>
+          <h2 id="leadership-heading">Executive Leadership</h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="editorial-grid-3">
+          <!-- Member 1 -->
+          <article class="member-card">
+            <div class="member-portrait-wrap">
+              <img 
+                src="../assets/images/henrik-lindqvist.jpg" 
+                alt="Dramatic black and white editorial portrait of Henrik Lindqvist, Founder and Creative Director in minimalist black attire" 
+                width="900" 
+                height="1200" 
+                loading="lazy">
+            </div>
+            <div class="member-card-body">
+              <span class="member-role">Founder & Creative Director</span>
+              <h3 class="member-name">Henrik Lindqvist</h3>
+              <p class="member-philosophy">
+                “True gastronomy is an act of listening. We do not invent flavors; we create the thermal and microbial conditions for nature to reveal itself.”
+              </p>
+              <div class="member-technique-pill">
+                <span class="technique-label">Core Technique</span>
+                <span class="technique-val">Terroir Conceptualization</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Member 2 -->
+          <article class="member-card">
+            <div class="member-portrait-wrap">
+              <img 
+                src="../assets/images/kaori-takahashi.jpg" 
+                alt="High-contrast studio black and white portrait of Kaori Takahashi, Chief Executive Officer with composed expression" 
+                width="900" 
+                height="1200" 
+                loading="lazy">
+            </div>
+            <div class="member-card-body">
+              <span class="member-role">Chief Executive Officer</span>
+              <h3 class="member-name">Kaori Takahashi</h3>
+              <p class="member-philosophy">
+                “Luxury in the twenty-first century is silence, intentionality, and ethical permanence across the entire supply chain.”
+              </p>
+              <div class="member-technique-pill">
+                <span class="technique-label">Core Technique</span>
+                <span class="technique-val">Regenerative Operations</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Member 3 -->
+          <article class="member-card">
+            <div class="member-portrait-wrap">
+              <img 
+                src="../assets/images/mathias-vance.jpg" 
+                alt="Sophisticated black and white portrait of Mathias Vance, Restaurant Director in bespoke charcoal suit" 
+                width="900" 
+                height="1200" 
+                loading="lazy">
+            </div>
+            <div class="member-card-body">
+              <span class="member-role">Restaurant Director</span>
+              <h3 class="member-name">Mathias Vance</h3>
+              <p class="member-philosophy">
+                “The guest must feel neither rushed nor observed. The rhythm of service should be as imperceptible and restorative as deep breathing.”
+              </p>
+              <div class="member-technique-pill">
+                <span class="technique-label">Core Technique</span>
+                <span class="technique-val">Spatial Choreography</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Group 2: The Culinary Masters -->
+    <section class="section-spacing" style="background-color: var(--bg-secondary);" aria-labelledby="culinary-masters-heading">
+      <div class="site-container">
+        <div style="max-width: 600px; margin-bottom: var(--space-xl);">
+          <span class="eyebrow">Hearth & Vaults</span>
+          <h2 id="culinary-masters-heading">The Culinary Masters</h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="editorial-grid-4">
+          <!-- Member 4 -->
+          <article class="member-card">
+            <div class="member-portrait-wrap">
+              <img 
+                src="../assets/images/kenji-morimoto.jpg" 
+                alt="Moody editorial portrait of Head Chef Kenji Morimoto in dark tailored jacket with intense focus" 
+                width="900" 
+                height="1200" 
+                loading="lazy">
+            </div>
+            <div class="member-card-body">
+              <span class="member-role">Head Chef & Hearth Master</span>
+              <h3 class="member-name">Kenji Morimoto</h3>
+              <p class="member-philosophy">
+                “Fire has a voice. White oak coals speak in whispers of cedar, smoke, and pure radiant heat.”
+              </p>
+              <div class="member-technique-pill">
+                <span class="technique-label">Specialty</span>
+                <span class="technique-val">Binchotan Far-Infrared</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Member 5 -->
+          <article class="member-card">
+            <div class="member-portrait-wrap">
+              <img 
+                src="../assets/images/astrid-holst.jpg" 
+                alt="Portrait of Astrid Holst, Sous Chef and Foraging Botanist, looking directly at the camera" 
+                width="900" 
+                height="1200" 
+                loading="lazy">
+            </div>
+            <div class="member-card-body">
+              <span class="member-role">Sous Chef & R&D Lead</span>
+              <h3 class="member-name">Astrid Holst</h3>
+              <p class="member-philosophy">
+                “Wild botanicals carry the exact mineral memory of the shore and forest where they grew.”
+              </p>
+              <div class="member-technique-pill">
+                <span class="technique-label">Specialty</span>
+                <span class="technique-val">Foraged Wild Flora</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Member 6 -->
+          <article class="member-card">
+            <div class="member-portrait-wrap">
+              <img 
+                src="../assets/images/dr-sorren-moller.jpg" 
+                alt="Portrait of Dr. Soren Møller, Master Fermenter holding a glass sample flask in the fermentation laboratory" 
+                width="900" 
+                height="1200" 
+                loading="lazy">
+            </div>
+            <div class="member-card-body">
+              <span class="member-role">Master Fermenter</span>
+              <h3 class="member-name">Dr. Soren Møller</h3>
+              <p class="member-philosophy">
+                “Microbes are our oldest collaborators. Time transforms simple starches into unrepeatable umami.”
+              </p>
+              <div class="member-technique-pill">
+                <span class="technique-label">Specialty</span>
+                <span class="technique-val">Aspergillus Propagation</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Member 7 -->
+          <article class="member-card">
+            <div class="member-portrait-wrap">
+              <img 
+                src="../assets/images/eloise-renard.jpg" 
+                alt="Portrait of Pastry Chef Eloise Renard examining delicate botanical sugar work" 
+                width="900" 
+                height="1200" 
+                loading="lazy">
+            </div>
+            <div class="member-card-body">
+              <span class="member-role">Executive Pastry Chef</span>
+              <h3 class="member-name">Éloïse Renard</h3>
+              <p class="member-philosophy">
+                “Dessert must never be heavy. It should be a crisp, aromatic farewell of birch, kelp, and koji.”
+              </p>
+              <div class="member-technique-pill">
+                <span class="technique-label">Specialty</span>
+                <span class="technique-val">Koji-Malt Confection</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Group 3: Front of House & Cellar -->
+    <section class="section-spacing" aria-labelledby="foh-heading">
+      <div class="site-container">
+        <div style="max-width: 600px; margin-bottom: var(--space-xl);">
+          <span class="eyebrow">The Floor & Cellar</span>
+          <h2 id="foh-heading">Front of House & Cellar</h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="editorial-grid-3">
+          <!-- Member 8 -->
+          <article class="member-card">
+            <div class="member-portrait-wrap">
+              <img 
+                src="../assets/images/julian-laurent.jpg" 
+                alt="Black and white portrait of Head Sommelier Julian Laurent holding a crystal tasting glass in cellar" 
+                width="900" 
+                height="1200" 
+                loading="lazy">
+            </div>
+            <div class="member-card-body">
+              <span class="member-role">Head Sommelier</span>
+              <h3 class="member-name">Julian Laurent</h3>
+              <p class="member-philosophy">
+                “We pour only living wines: unfiltered, biodynamic, expressive of limestone and volcanic slope.”
+              </p>
+              <div class="member-technique-pill">
+                <span class="technique-label">Focus</span>
+                <span class="technique-val">Low-Intervention Terroir</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Member 9 -->
+          <article class="member-card">
+            <div class="member-portrait-wrap">
+              <img 
+                src="../assets/images/yuki-tanaka.jpg" 
+                alt="Portrait of Head Mixologist Yuki Tanaka garnishing a cocktail over a dark granite counter" 
+                width="900" 
+                height="1200" 
+                loading="lazy">
+            </div>
+            <div class="member-card-body">
+              <span class="member-role">Head Mixologist</span>
+              <h3 class="member-name">Yuki Tanaka</h3>
+              <p class="member-philosophy">
+                “A beverage pairing is not an accompaniment; it is the final missing ingredient of the dish.”
+              </p>
+              <div class="member-technique-pill">
+                <span class="technique-label">Focus</span>
+                <span class="technique-val">Botanical Ferment Extracts</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Member 10 -->
+          <article class="member-card">
+            <div class="member-portrait-wrap">
+              <img 
+                src="../assets/images/clara-beauchamp.jpg" 
+                alt="Portrait of Maître d'Hôtel Clara Beauchamp welcoming guests in the warm sanctuary foyer" 
+                width="900" 
+                height="1200" 
+                loading="lazy">
+            </div>
+            <div class="member-card-body">
+              <span class="member-role">Maître d’Hôtel</span>
+              <h3 class="member-name">Clara Beauchamp</h3>
+              <p class="member-philosophy">
+                “We anticipate desires before they crystallize in thought. True hospitality is invisible intuition.”
+              </p>
+              <div class="member-technique-pill">
+                <span class="technique-label">Focus</span>
+                <span class="technique-val">Omotenashi Protocol</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Bridge to Menu -->
+    <section class="section-spacing" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle);">
+      <div class="site-container-narrow" style="text-align: center;">
+        <span class="eyebrow centered">The Current Offering</span>
+        <h2>Experience Their Work Firsthand</h2>
+        <div class="gold-divider center"></div>
+        <p class="lead-text" style="margin-bottom: 2rem;">
+          View our interactive tasting menu, explore ingredient profiles, and examine our curated wine and non-alcoholic ferment flights.
+        </p>
+        <a href="../menu/" class="btn-luxury btn-luxury-primary">
+          <span>Explore The Menu & Cellar</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Floating WhatsApp Reservation CTA -->
+  <aside class="whatsapp-floating-widget" aria-label="Direct WhatsApp Concierge">
+    <a href="https://wa.me/601163265610" class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Reserve via WhatsApp Concierge (Opens WhatsApp)">
+      <span class="whatsapp-icon-circle" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.148-.528-1.574-.649-2.583-2.253-2.661-2.357-.078-.105-.637-.847-.637-1.615 0-.767.401-1.144.543-1.301.143-.157.312-.196.416-.196.104 0 .208.001.299.006.095.005.223-.036.349.266.13.312.443 1.077.482 1.155.039.078.065.17.013.273-.052.104-.078.169-.156.26-.078.091-.163.204-.233.274-.078.078-.16.163-.069.319.091.156.403.665.865 1.076.594.529 1.096.693 1.252.771.156.078.247.065.338-.039.091-.104.39-.455.494-.611.104-.156.208-.13.349-.078.143.052.909.429 1.065.507.156.078.26.117.299.182.039.065.039.377-.105.782z"/>
+        </svg>
+      </span>
+      <span class="whatsapp-float-label">Concierge</span>
+    </a>
+  </aside>
+
+  <!-- Shared Site Chrome: Luxury Dark Contrast Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <span class="footer-brand-title">Aurelia & Ash</span>
+          <p class="footer-brand-desc">
+            An elemental encounter between wild Scandinavian nature and ancestral Kyoto wood-fire mastery.
+          </p>
+          <div class="footer-accolade-badge">
+            <span aria-hidden="true">✧</span> 3 Michelin Stars Concept
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="../" class="footer-link">Sanctuary Home</a></li>
+            <li><a href="../history/" class="footer-link">Origins & Terroir</a></li>
+            <li><a href="../method/" class="footer-link">The Culinary Method</a></li>
+            <li><a href="../member/" class="footer-link">The Brigade & Masters</a></li>
+            <li><a href="../menu/" class="footer-link">Degustation & Cellar</a></li>
+            <li><a href="../contact/" class="footer-link">Concierge & Booking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Sanctuary Details</h3>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Location</span>
+            <span class="footer-contact-val">Higashiyama Ward, Kyoto / Atelier Bornholm</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Hours</span>
+            <span class="footer-contact-val">Wednesday – Sunday · 18:00 & 20:30 Seatings</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Direct Concierge</span>
+            <span class="footer-contact-val">+60 11-6326 5610</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">The Concierge</h3>
+          <p class="footer-brand-desc" style="margin-bottom: 1.25rem;">
+            Instant assistance for private dining room takeovers, corporate buyouts, or special dietary protocols.
+          </p>
+          <a href="../contact/" class="btn-luxury btn-luxury-gold" style="padding: 0.8rem 1.6rem; font-size: 0.72rem;">
+            <span>Inquire via WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>© 2026 Aurelia & Ash Gastronomy Group. All rights reserved.</p>
+        <p class="footer-concept-disclaimer">
+          Brand Honesty Notice: All accolades, awards, and star ratings presented on this website reflect culinary concept blueprints and aspirational benchmarking, not verified commercial certifications.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

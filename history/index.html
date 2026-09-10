@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Origins of Aurelia & Ash — Tracing the journey from a clandestine Copenhagen test kitchen to our Kyoto open-hearth estate, grounded in biodynamic terroir.">
+  <title>Origins & History — Aurelia & Ash</title>
+  <!-- Aurelia & Ash Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/images/favicon.png">
+
+  <!-- Google Fonts Preconnect & Font Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared Global Stylesheet -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- External Motion Dependencies: GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Shared Interactive Engine -->
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <!-- Accessible Skip Navigation -->
+  <a href="#main-content" class="skip-to-content">Skip to Historical Content</a>
+
+  <!-- Shared Site Chrome: Header & Navigation -->
+  <header class="site-header" role="banner">
+    <div class="site-container">
+      <div class="header-inner">
+        <a href="../" class="site-brand" aria-label="Aurelia and Ash Home">
+          <div class="brand-monogram" aria-hidden="true">AA</div>
+          <div class="brand-text">
+            <span class="brand-name">Aurelia & Ash</span>
+            <span class="brand-subline">Kyoto · Copenhagen</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Bar -->
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <a href="../" class="nav-link">Home</a>
+          <a href="../history/" class="nav-link active" aria-current="page">Origins</a>
+          <a href="../method/" class="nav-link">Method</a>
+          <a href="../member/" class="nav-link">Craft</a>
+          <a href="../menu/" class="nav-link">Menu</a>
+          <a href="../contact/" class="nav-link">Concierge</a>
+        </nav>
+
+        <div class="header-cta-wrap">
+          <a href="../contact/" class="btn-luxury btn-header-reserve">
+            <span>Reserve Table</span>
+          </a>
+        </div>
+
+        <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-label="Toggle Navigation Menu">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div class="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <nav class="mobile-nav-links">
+      <a href="../" class="mobile-nav-item">
+        Home <span>01</span>
+      </a>
+      <a href="../history/" class="mobile-nav-item active" aria-current="page">
+        Origins <span>02</span>
+      </a>
+      <a href="../method/" class="mobile-nav-item">
+        Method <span>03</span>
+      </a>
+      <a href="../member/" class="mobile-nav-item">
+        Craft <span>04</span>
+      </a>
+      <a href="../menu/" class="mobile-nav-item">
+        Menu <span>05</span>
+      </a>
+      <a href="../contact/" class="mobile-nav-item">
+        Concierge <span>06</span>
+      </a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="../contact/" class="btn-luxury btn-luxury-primary" style="width: 100%;">
+        <span>Reserve Seating</span>
+      </a>
+      <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center;">
+        Single Seating Nightly · 12 Seats Only
+      </p>
+    </div>
+  </aside>
+
+  <!-- Main Landmark Container -->
+  <main id="main-content">
+    <!-- Hero Section: Full-Width Architectural Background & Editorial Overlay -->
+    <section class="hero hero-history" aria-labelledby="origins-hero-heading">
+      <div class="hero-media">
+        <img 
+          src="../assets/images/hero-history-01.jpg" 
+          alt="Atmospheric panoramic landscape capturing the misty cedar-forested mountains of northern Kyoto at dawn with traditional charcoal kiln smoke rising" 
+          class="hero-media-image" 
+          data-asset-id="hero-history-01" 
+          width="2560" 
+          height="1440" 
+          loading="lazy" 
+          decoding="async">
+        <div class="hero-scrim" aria-hidden="true"></div>
+      </div>
+      <div class="site-container hero-container">
+        <div class="hero-content-wrap">
+          <span class="eyebrow">The Genesis Narrative</span>
+          <h1 id="origins-hero-heading" class="display-hero">
+            Born from Cold Seas &<br><em>Sacred Kyoto Embers</em>
+          </h1>
+          <p class="hero-tagline-lead">
+            Two culinary worlds separated by eight thousand kilometers of ocean and mountain, united by an unshakeable obsession with micro-climates, raw fire, and microbial maturation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Genesis Narrative Split -->
+    <section class="section-spacing" aria-labelledby="genesis-subheading">
+      <div class="site-container">
+        <div class="editorial-split asymmetric-left">
+          <div>
+            <span class="eyebrow">Where It Began</span>
+            <h2 id="genesis-subheading" style="margin-bottom: 1.5rem;">
+              The Copenhagen–Kyoto Dialogue
+            </h2>
+            <div class="gold-divider"></div>
+            <p class="lead-text" style="margin-bottom: 1.5rem;">
+              In the winter of 2017, Danish creative director Henrik Lindqvist traveled to the northern hills of Kyoto to study the preservation of mountain sansho pepper and centuries-old cedarwood smokehouses. It was there he encountered Chef Kenji Morimoto, an eighth-generation hearth cook who had spent three decades unlocking the thermal secrets of Kishu Binchotan oak charcoal.
+            </p>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+              What began as a late-night exchange over roasted wild mushrooms and cedar-aged sake became a radical manifesto: to fuse the austere foraged terroir of Scandinavia—the kelps, sea buckthorn berries, and wild lichens—with the disciplined, spiritual warmth of Japanese open-hearth cuisine.
+            </p>
+            <p style="color: var(--text-secondary);">
+              Neither kitchen would dilute the other. Instead, fire would act as the catalyst, and fermentation would act as the memory.
+            </p>
+          </div>
+
+          <div class="hero-visual-frame" data-parallax="true">
+            <img 
+              src="../assets/images/history-hero-banner.jpg" 
+              alt="Archival black and white landscape showing the misty cedar forests of northern Kyoto and traditional charcoal kiln" 
+              width="1920" 
+              height="1080">
+            <div class="hero-image-caption">Wakayama Forest Archives · 2017</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Vertical Timeline Section -->
+    <section class="timeline-section" style="background-color: var(--bg-secondary);" aria-labelledby="timeline-heading">
+      <div class="site-container">
+        <div style="text-align: center; max-width: 650px; margin: 0 auto var(--space-2xl);">
+          <span class="eyebrow centered">Chrono-Architecture</span>
+          <h2 id="timeline-heading">The Evolution of the Craft</h2>
+          <p class="lead-text" style="margin-top: 0.5rem;">
+            From an underground Copenhagen warehouse test kitchen to our permanent architectural estate in Kyoto.
+          </p>
+        </div>
+
+        <!-- Vertical Timeline Component -->
+        <div class="timeline-container" data-module="vertical-timeline">
+          <div class="timeline-track-line">
+            <div class="timeline-track-progress"></div>
+          </div>
+
+          <!-- Milestone 1 -->
+          <article class="timeline-milestone">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card-col">
+              <div class="timeline-card">
+                <span class="timeline-year">2018</span>
+                <h3 class="timeline-title">The Nordic-Kyoto Atelier</h3>
+                <p class="timeline-body">
+                  An 8-seat clandestine pop-up established in Copenhagen's Refshaleøen shipyard. Cooking solely over imported binchotan inside a raw concrete shell, testing forty varieties of wild Danish seaweed against house-grown koji strains.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-media-col">
+              <div class="timeline-media">
+                <img 
+                  src="../assets/images/timeline-2018.jpg" 
+                  alt="Atmospheric archival photo of the 8-seat concrete pop-up kitchen in Copenhagen with smoke rising from binchotan grill" 
+                  width="1200" 
+                  height="900" 
+                  loading="lazy">
+              </div>
+            </div>
+          </article>
+
+          <!-- Milestone 2 -->
+          <article class="timeline-milestone">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card-col">
+              <div class="timeline-card">
+                <span class="timeline-year">2020</span>
+                <h3 class="timeline-title">Shigaraki Fermentation Chambers</h3>
+                <p class="timeline-body">
+                  Commissioning master ceramic artisans in Shigaraki, Japan, to build bespoke unglazed earthenware jars. These micro-porous vessels harbor proprietary cultures of Aspergillus oryzae, incubating our inaugural batch of 24-month venison garums.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-media-col">
+              <div class="timeline-media">
+                <img 
+                  src="../assets/images/timeline-2020.jpg" 
+                  alt="Rows of handcrafted unglazed ceramic fermentation urns in a temperature-controlled wooden aging cellar" 
+                  width="1200" 
+                  height="900" 
+                  loading="lazy">
+              </div>
+            </div>
+          </article>
+
+          <!-- Milestone 3 -->
+          <article class="timeline-milestone">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card-col">
+              <div class="timeline-card">
+                <span class="timeline-year">2022</span>
+                <h3 class="timeline-title">Forager Alliances & Terroir Mapping</h3>
+                <p class="timeline-body">
+                  Formalizing our botanical network across Gotland, Bornholm, and Hokkaido. Securing exclusive sourcing rights for deep-sea kelp, sub-polar pine shoots, and uncultivated cloudberries from biodynamic preserves.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-media-col">
+              <div class="timeline-media">
+                <img 
+                  src="../assets/images/timeline-2022.jpg" 
+                  alt="Forager harvesting wild sea botanicals along the rocky, windswept coastline of the Baltic Sea" 
+                  width="1200" 
+                  height="900" 
+                  loading="lazy">
+              </div>
+            </div>
+          </article>
+
+          <!-- Milestone 4 -->
+          <article class="timeline-milestone">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card-col">
+              <div class="timeline-card">
+                <span class="timeline-year">2024</span>
+                <h3 class="timeline-title">The Kyoto Flagship Estate</h3>
+                <p class="timeline-body">
+                  The unveiling of our permanent twelve-seat hearth sanctuary in Kyoto's historical foothills. A custom masonry hearth engineered to burn aged white oak at 900°C alongside a subterranean microbial aging library.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-media-col">
+              <div class="timeline-media">
+                <img 
+                  src="../assets/images/timeline-2024.jpg" 
+                  alt="Architectural exterior of the minimalist Kyoto flagship estate blending dark charred timber with serene stone gardens" 
+                  width="1200" 
+                  height="900" 
+                  loading="lazy">
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terroir & Sourcing Section -->
+    <section class="section-spacing" aria-labelledby="terroir-heading">
+      <div class="site-container">
+        <div style="max-width: 720px; margin-bottom: var(--space-xl);">
+          <span class="eyebrow">Terroir & Ecosystem Stewardship</span>
+          <h2 id="terroir-heading">Honor the Soil. Revere the Tide.</h2>
+          <p class="lead-text" style="margin-top: 0.5rem;">
+            True luxury is traceability. We do not purchase through commodity distributors; our larder is sustained exclusively by generational growers, coastal free-divers, and wilderness custodians.
+          </p>
+        </div>
+
+        <div class="editorial-grid-3">
+          <!-- Pillar 1 -->
+          <article class="dish-highlight-card">
+            <div class="dish-media">
+              <img 
+                src="../assets/images/terroir-card-1.jpg" 
+                alt="Lush green organic biodynamic farm valley surrounded by morning mist with workers hand-harvesting heritage brassicas" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+              <div class="dish-badge-overlay">Regenerative Earth</div>
+            </div>
+            <div class="dish-content">
+              <span class="section-label-num">01</span>
+              <h3 class="dish-title">Biodynamic Heritage Farms</h3>
+              <p class="dish-desc">
+                Partnered with zero-chemical estates in Bornholm and Nagano. Vegetables are harvested at sunrise and dispatched to our kitchen within eighteen hours, preserving native soil microbes.
+              </p>
+            </div>
+          </article>
+
+          <!-- Pillar 2 -->
+          <article class="dish-highlight-card">
+            <div class="dish-media">
+              <img 
+                src="../assets/images/terroir-card-2.jpg" 
+                alt="Artisanal fisherman holding a line-caught wild sea bream aboard a wooden skiff at dawn" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+              <div class="dish-badge-overlay">Ethical Catch</div>
+            </div>
+            <div class="dish-content">
+              <span class="section-label-num">02</span>
+              <h3 class="dish-title">Artisanal Ike-Jime Divers</h3>
+              <p class="dish-desc">
+                All coastal bounty is dispatched via instantaneous neurological Ike-jime technique by 3rd-generation divers in Hokkaido and the Faroe Islands, guaranteeing pristine muscular tension and sweetness.
+              </p>
+            </div>
+          </article>
+
+          <!-- Pillar 3 -->
+          <article class="dish-highlight-card">
+            <div class="dish-media">
+              <img 
+                src="../assets/images/terroir-card-3.jpg" 
+                alt="Macro view of forager hands gently gathering wild lichen and edible pine shoots in an old-growth birch forest" 
+                width="1200" 
+                height="900" 
+                loading="lazy">
+              <div class="dish-badge-overlay">Forest Commons</div>
+            </div>
+            <div class="dish-content">
+              <span class="section-label-num">03</span>
+              <h3 class="dish-title">Living Forest Foragers</h3>
+              <p class="dish-desc">
+                Our team roams sub-alpine ridges and coastal dunes weekly, gathering wild juniper boughs, pine-bark cambium, rock moss, and elderberries at the peak of aromatic volatile oil concentration.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Strip -->
+    <section class="section-spacing" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle);">
+      <div class="site-container-narrow" style="text-align: center;">
+        <span class="eyebrow centered">The Kitchen Method</span>
+        <h2>Observe How Fire & Mold Transform Matter</h2>
+        <div class="gold-divider center"></div>
+        <p class="lead-text" style="margin-bottom: 2rem;">
+          Explore our culinary doctrine: the exact mechanics of Kishu Binchotan combustion and the biochemistry of our in-house koji chamber.
+        </p>
+        <a href="../method/" class="btn-luxury btn-luxury-primary">
+          <span>Explore The Culinary Method</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Floating WhatsApp Reservation CTA -->
+  <aside class="whatsapp-floating-widget" aria-label="Direct WhatsApp Concierge">
+    <a href="https://wa.me/601163265610" class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Reserve via WhatsApp Concierge (Opens WhatsApp)">
+      <span class="whatsapp-icon-circle" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.148-.528-1.574-.649-2.583-2.253-2.661-2.357-.078-.105-.637-.847-.637-1.615 0-.767.401-1.144.543-1.301.143-.157.312-.196.416-.196.104 0 .208.001.299.006.095.005.223-.036.349.266.13.312.443 1.077.482 1.155.039.078.065.17.013.273-.052.104-.078.169-.156.26-.078.091-.163.204-.233.274-.078.078-.16.163-.069.319.091.156.403.665.865 1.076.594.529 1.096.693 1.252.771.156.078.247.065.338-.039.091-.104.39-.455.494-.611.104-.156.208-.13.349-.078.143.052.909.429 1.065.507.156.078.26.117.299.182.039.065.039.377-.105.782z"/>
+        </svg>
+      </span>
+      <span class="whatsapp-float-label">Concierge</span>
+    </a>
+  </aside>
+
+  <!-- Shared Site Chrome: Luxury Dark Contrast Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <span class="footer-brand-title">Aurelia & Ash</span>
+          <p class="footer-brand-desc">
+            An elemental encounter between wild Scandinavian nature and ancestral Kyoto wood-fire mastery.
+          </p>
+          <div class="footer-accolade-badge">
+            <span aria-hidden="true">✧</span> 3 Michelin Stars Concept
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="../" class="footer-link">Sanctuary Home</a></li>
+            <li><a href="../history/" class="footer-link">Origins & Terroir</a></li>
+            <li><a href="../method/" class="footer-link">The Culinary Method</a></li>
+            <li><a href="../member/" class="footer-link">The Brigade & Masters</a></li>
+            <li><a href="../menu/" class="footer-link">Degustation & Cellar</a></li>
+            <li><a href="../contact/" class="footer-link">Concierge & Booking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Sanctuary Details</h3>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Location</span>
+            <span class="footer-contact-val">Higashiyama Ward, Kyoto / Atelier Bornholm</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Hours</span>
+            <span class="footer-contact-val">Wednesday – Sunday · 18:00 & 20:30 Seatings</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Direct Concierge</span>
+            <span class="footer-contact-val">+60 11-6326 5610</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">The Concierge</h3>
+          <p class="footer-brand-desc" style="margin-bottom: 1.25rem;">
+            Instant assistance for private dining room takeovers, corporate buyouts, or special dietary protocols.
+          </p>
+          <a href="../contact/" class="btn-luxury btn-luxury-gold" style="padding: 0.8rem 1.6rem; font-size: 0.72rem;">
+            <span>Inquire via WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>© 2026 Aurelia & Ash Gastronomy Group. All rights reserved.</p>
+        <p class="footer-concept-disclaimer">
+          Brand Honesty Notice: All accolades, awards, and star ratings presented on this website reflect culinary concept blueprints and aspirational benchmarking, not verified commercial certifications.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
